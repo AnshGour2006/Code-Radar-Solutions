@@ -6,8 +6,7 @@ char* welcome() {
 
 int main() {
     int a,b;
-    a=10;
-    b=5;
+    scanf("%d"&a,b)
     printf("sum :%d",a+b);
     return 0;
 }
