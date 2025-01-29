@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     int a,b;
-    scanf("%f"&a,b);
+    scanf("%d"&a);
     printf("sum :%d",a+b);
     return 0;
 }
