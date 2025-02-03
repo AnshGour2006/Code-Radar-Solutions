@@ -5,14 +5,14 @@ char* welcome() {
 }
 
 int main() {
-    int a,b,c;
+    int num1,num2,num3;
     printf("enter a first number:\n");
-    scanf("%d",&a);
+    scanf("%d",&num1);
     printf("enter a second number:\n");
-    scanf("%d",&b);
+    scanf("%d",&num2);
     printf("enter a third number:\n");
-    scanf("%d",&c);
-    double average=(a+b+c)/3.0;
+    scanf("%d",&num3);
+    double average=(num1+num2+num3)/3.0;
     printf("Average: %.2f\n",average);
     return 0;
 }
