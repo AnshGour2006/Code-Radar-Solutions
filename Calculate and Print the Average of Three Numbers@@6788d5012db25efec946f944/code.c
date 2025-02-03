@@ -12,7 +12,7 @@ int main() {
     scanf("%d",&b);
     printf("enter a third number:\n");
     scanf("%d",&c);
-    float average=(a+b+c)/3;
-    printf("Average: %.2f",average);
+    int average=(a+b+c)/3;
+    printf("Average: %d",average);
     return 0;
 }
