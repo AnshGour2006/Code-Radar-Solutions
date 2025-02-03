@@ -13,6 +13,6 @@ int main() {
     printf("enter a third number:\n");
     scanf("%d",&c);
     double average=(a+b+c)/3.0;
-    printf("Average: %.2f",average);
+    printf("Average: %.2f\n",average);
     return 0;
 }
