@@ -6,6 +6,6 @@ char* welcome() {
 
 int main() {
     double num;
-    sacnf("%1f",&num);
+    scanf("%1f",&num);
     printf("You entered: %.61f",num);
 }
