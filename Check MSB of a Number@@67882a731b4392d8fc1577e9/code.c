@@ -10,10 +10,10 @@ int main() {
     bit_size=sizeof(int)*8;
     msb_mask=1<<(bit_size-1);
     if(num & msb_mask){
-        printf("Set");
+        printf("Set",num);
     }
     else{
-        printf("Non Set");
+        printf("Non Set",num);
     }
     return 0;
 }
