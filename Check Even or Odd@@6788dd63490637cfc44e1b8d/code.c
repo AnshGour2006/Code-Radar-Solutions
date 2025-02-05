@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     int num;
-    scanf("%d",&a)
+    scanf("%d",&a);
     if(a<0){
         printf("Even");
     }
