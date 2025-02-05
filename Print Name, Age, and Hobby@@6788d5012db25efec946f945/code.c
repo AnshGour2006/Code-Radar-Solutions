@@ -1,21 +1,14 @@
 #include <stdio.h>
 int main() {
-    char name[100];
+    char name[50];hobby[50];
     int age;
-    char hobby[100];
-    printf("Enter your name: ");
-    scanf("%99[^\n]",name);
-
-    printf("Enter your age: ");
+    scanf("%s",name);
     scanf("%d",&age);
-    
-    getchar();
+    scanf("%s",hobby);
+    printf("Name: %s",name);
+    printf("Name: %d",age);
+    printf("Hobby: %s",hobby);
 
-    printf("Enter your favourite hobby: ");
-    scanf("%99[^\n]",hobby);
-    printf("Name: %s\n",name);
-    printf("Age: %d\n",age);
-    printf("Hobby: %s\n",hobby);
     return 0;
     
 }
