@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     int a;
-    sacnf("%d",&a);
+    scanf("%d",&a);
     if(a>!0){
         printf("True\n");
     }
