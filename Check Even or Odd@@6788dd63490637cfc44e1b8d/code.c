@@ -8,9 +8,9 @@ int main() {
     int num;
     scanf("%d",&a)
     if(a<0){
-        printf("%d",Even);
+        printf("Even");
     }
     else{
-        printf("%d",Odd);
+        printf("Odd");
     }
 }
