@@ -5,7 +5,7 @@ char* welcome() {
 }
 
 int main() {
-   int a,b
+   int a,b;
    if(a<b){
     printf("True");
    }
