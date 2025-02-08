@@ -7,7 +7,7 @@ char* welcome() {
 int main() {
    int num;
    scanf("%d",&num);
-   if((num/2==0 && num/3)){
+   if(!(num/2==0 && num/3)){
     printf("Not Prime\n");
    }
    else{
