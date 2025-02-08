@@ -6,12 +6,11 @@ char* welcome() {
 
 int main() {
    char ch;
-   printf("enter a character \n");
    scanf("%c",&ch);
    if(ch>=97 && ch<=122){
-    printf("Uppercase");
+    printf("Lowercase");
    }
    else{
-    printf("Lowercase");
+    printf("Uppercase");
    }
 }
