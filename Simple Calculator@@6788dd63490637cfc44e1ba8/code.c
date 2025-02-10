@@ -17,7 +17,7 @@ int main() {
             printf("Error: Division by zero.\n");
         }
     } else {
-        printf("Invalid operator.\n");
+        printf("Error:Division by zero\n");
     }
 
     return 0;
