@@ -1,33 +1,24 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
-    int a,b
-    char opearator;
-    scanf("%d %d %c",&a,&b,&opearator)l;
-    if(opearator=='+'){
-        printf("%d\n",a+b);
-    }
-    else if(opearator=='-'){
-        printf("%d\n",a-b);
-    }
-   else if(opearator=='*'){
-        printf("%d\n",a*b);
-    }
-   
-    else if(opeartor=='/'){
-        if(b!=0){
-            printf("%d\n",a/b);
+    int a, b;
+    char operator;
+    scanf("%d %d %c", &a, &b, &operator);
+    if (operator == '+') {
+        printf("%d\n", a + b);
+    } else if (operator == '-') {
+        printf("%d\n", a - b);
+    } else if (operator == '*') {
+        printf("%d\n", a * b);
+    } else if (operator == '/') {
+        if (b != 0) {
+            printf("%d\n", a / b);
+        } else {
+            printf("Error: Division by zero.\n");
         }
+    } else {
+        printf("Invalid operator.\n");
     }
-    else{
-        printf("Invalid operator\n");
-    }
-
-
 
     return 0;
 }
