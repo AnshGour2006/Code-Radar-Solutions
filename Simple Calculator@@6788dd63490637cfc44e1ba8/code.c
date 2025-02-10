@@ -7,11 +7,11 @@ char* welcome() {
 int main() {
     int a,b
     char opearator;
-    scanf("%d %d %c",&a,&b,&c)l;
+    scanf("%d %d %c",&a,&b,&opearator)l;
     if(opearator=='+'){
         printf("%d\n",a+b);
     }
-     else if(opearator=='-'){
+    else if(opearator=='-'){
         printf("%d\n",a-b);
     }
    else if(opearator=='*'){
