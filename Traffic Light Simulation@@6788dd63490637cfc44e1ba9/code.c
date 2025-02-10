@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
 char light;
-scanf("%c",&char);
+scanf("%c",&light);
 if(light=='R'){
     printf("Stop");
 }
