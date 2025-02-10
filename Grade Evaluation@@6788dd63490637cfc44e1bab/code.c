@@ -19,7 +19,7 @@ int main() {
    else if(grade=='D'){
     printf("Below");
    }
-   else{
+   else if(grade=='F'){
     printf("Fail");
    }
     return 0;
