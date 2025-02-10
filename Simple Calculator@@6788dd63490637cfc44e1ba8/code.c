@@ -17,8 +17,14 @@ int main() {
    else if(opearator=='*'){
         printf("%d\n",a*b);
     }
-    else if(opearator=='/'){
-        printf("%d\n",a/b);
+   
+    else if(opeartor=='/'){
+        if(b!=0){
+            printf("%d\n",a/b);
+        }
+    }
+    else{
+        printf("Invalid operator\n");
     }
 
 
