@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
    char grade;
-   scanf("%d",&grade);
+   scanf("%c",&grade);
    if(grade=='A'){
     printf("Excellent");
    }
@@ -19,7 +19,7 @@ int main() {
    else if(grade=='D'){
     printf("Below");
    }
-   else{
+   else if(grade=='F'){
     printf("Fail");
    }
     return 0;
