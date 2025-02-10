@@ -14,7 +14,7 @@ int main() {
         if (b != 0) {
             printf("%d\n", a / b);
         } else {
-            printf("error\n")
+            printf("error\n");
         }
     } else {
         printf("error");
