@@ -5,12 +5,13 @@ char* welcome() {
 }
 
 int main() {
-    char sign1,sign2;
-    scanf("%c %c",&sign1,&sign2);
-    if(sign1=='+'&& sign2=='+' || sign1=='-' && sign2=='-'){
+    int a,b;
+    scanf("%a %b",&a,&b);
+    if(a>=0 && b>=0 || a<0 && b<0){
         printf("Same Sign");
     }
     else{
-    printf("Different Sign");
+        printf("Different Sign");
     }
+    
 }
