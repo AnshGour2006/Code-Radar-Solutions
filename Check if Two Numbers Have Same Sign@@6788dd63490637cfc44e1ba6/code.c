@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     char sign1,sign2;
-    scanf("%c %c",&sign,&sign2);
+    scanf("%c %c",&sign1,&sign2);
     if(sign1=='+'&& sign2=='+'){
         printf("Same Sign");
     }
