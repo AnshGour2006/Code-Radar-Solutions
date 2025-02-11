@@ -7,7 +7,7 @@ char* welcome() {
 int main() {
    int costprice,sellingprice;
    scanf("%d %d",&costprice,&sellingprice);
-   if(costprice>sellingprice){
+   if(costprice<sellingprice){
     printf("Profit\n");
    }
    else if(costprice<sellingprice){
