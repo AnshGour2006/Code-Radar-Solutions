@@ -21,9 +21,9 @@ int main() {
 
     // Output result
     if (isPrime) {
-        printf("%dPrime\n", n);
+        printf("%d Prime\n", n);
     } else {
-        printf("%dNot Prime\n", n);
+        printf("%d Not Prime\n", n);
     }
 
     return 0;
