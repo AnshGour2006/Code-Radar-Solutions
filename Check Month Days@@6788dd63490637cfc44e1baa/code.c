@@ -18,7 +18,7 @@ int main() {
             days = 28; // Default to 28 days, leap year not considered here
             break;
         default:
-            printf("Invalid month! Please enter a number between 1 and 12.\n");
+            printf("Invalid\n");
             return 1; // Indicating error
     }
 
