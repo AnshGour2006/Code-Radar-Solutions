@@ -5,7 +5,6 @@ int main() {
     char ch;
 
     // Input character
-    printf("Enter a character: ");
     scanf("%c", &ch);
 
     // Check if the character is a digit
