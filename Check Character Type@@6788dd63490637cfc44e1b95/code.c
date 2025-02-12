@@ -24,7 +24,7 @@ int main() {
         }
     } 
     else {
-        printf("Special character\n");
+        printf("Special Character\n");
     }
 
     return 0;
