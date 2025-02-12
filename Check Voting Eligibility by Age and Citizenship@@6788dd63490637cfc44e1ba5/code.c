@@ -2,7 +2,7 @@
 int main(){
     int age, citizen;
     
-    if(age >= 18 && citizen == 1){
+    if(age > 18 && citizen == 1){
         printf("Eligible\n");  // Citizen and age condition
     }
     else if(age >= 18 && citizen == 0){
