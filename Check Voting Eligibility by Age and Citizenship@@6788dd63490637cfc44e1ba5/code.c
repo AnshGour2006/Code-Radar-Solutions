@@ -5,8 +5,6 @@ int main() {
     
     // Take input for age and citizenship
     scanf("%d", &age);
-    
-    printf("Enter citizenship status (1 for citizen, 0 for non-citizen): ");
     scanf("%d", &citizen);
 
     // Corrected condition
