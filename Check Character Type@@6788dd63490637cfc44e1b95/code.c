@@ -9,7 +9,7 @@ int main() {
 
     // Check if the character is a digit
     if (isdigit(ch)) {
-        printf("The character is a Digit.\n");
+        printf("Digit\n");
     }
     // Check if the character is a letter
     else if (isalpha(ch)) {
