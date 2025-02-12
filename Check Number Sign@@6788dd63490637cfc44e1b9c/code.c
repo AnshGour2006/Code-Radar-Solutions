@@ -12,4 +12,5 @@ int main(){
     else{
         printf("Negative\n");
     }
+    return 0;
 }
