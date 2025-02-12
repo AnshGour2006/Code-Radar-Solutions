@@ -15,11 +15,11 @@ int main() {
             days = 30;
             break;
         case 2:
-            days = 28; // Default for non-leap year
+            days = 28; 
             break;
         default:
             printf("Invalid month! Please enter a number between 1 and 12.\n");
-            return 1; // Exit with an error code
+            return 1; 
     
     return 0;
 }
