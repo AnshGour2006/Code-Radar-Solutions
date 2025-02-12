@@ -1,8 +1,7 @@
-// Your code here...
 #include<stdio.h>
 int main(){
-    int age,citizen;
-    if(age>=18 && citzen==1){
+    int age = 20, citizen = 1;  // example values
+    if(age >= 18 && citizen == 1){
         printf("Eligible");
     }
     else{
