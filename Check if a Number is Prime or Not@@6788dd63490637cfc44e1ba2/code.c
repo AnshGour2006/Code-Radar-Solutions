@@ -32,9 +32,9 @@ int main() {
 
     // Output result
     if (isPrime) {
-        printf("Prime\n", n);
+        printf("%dPrime\n", n);
     } else {
-        printf("Not Prime \n", n);
+        printf("%dNot Prime \n", n);
     }
 
     return 0;
