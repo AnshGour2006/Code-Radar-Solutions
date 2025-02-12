@@ -10,7 +10,7 @@ int main() {
     scanf("%d", &citizen);
 
     // Corrected condition
-    if (age >= 18 || citizen == 1) {
+    if (age >= 18 && citizen == 1) {
         printf("Eligible\n");
     } else {  // No condition needed here
         printf("Not Eligible\n");
