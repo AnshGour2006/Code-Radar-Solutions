@@ -25,7 +25,6 @@ int is_right_triangle(int a, int b, int c) {
 
 int main() {
     int a, b, c;
-    printf("Enter three sides of the triangle: ");
     scanf("%d %d %d", &a, &b, &c);
     
     if (is_right_triangle(a, b, c)) {
