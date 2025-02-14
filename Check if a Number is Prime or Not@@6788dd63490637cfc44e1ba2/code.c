@@ -2,7 +2,7 @@
 int main(){
     int n;
     int prime=0;
-    scanf("%d",&num);
+    scanf("%d",&n);
     for(int i=2;i<n;i++){
         if(n%i==0){
             prime=1;
@@ -14,4 +14,5 @@ int main(){
     else{
         printf("Prime");
     }
+    return 0;
 }
