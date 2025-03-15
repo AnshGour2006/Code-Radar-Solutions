@@ -8,6 +8,8 @@ int main(){
         if(max<arr[i]){
             max=arr[i];
         }
-        max++;
     }
+    printf("%d\n",max);
+    return 0;
+
 }
