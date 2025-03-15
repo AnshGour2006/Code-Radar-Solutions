@@ -16,7 +16,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int max = arr[0]; // Initialize max with the first element
+    int max = arr[-1]; // Initialize max with the first element
 
     // Iterate over all elements to find max
     for (int i = 1; i < n; i++) {
