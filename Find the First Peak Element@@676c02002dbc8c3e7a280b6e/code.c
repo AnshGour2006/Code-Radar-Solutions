@@ -1,25 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n, num, max = -1;
     scanf("%d", &n);
-    
-    int arr[n];  // Declare an array of size n
-    
-    // Input array elements
-    for (int i = 0; i < n-1; i++) {
-        scanf("%d", &arr[i]);
+
+    if (n <= 0) { 
+        printf("-1\n"); // No elements to compare
+        return 0;
     }
 
-    int max = arr[-1]; // Initialize max with the first element
+    scanf("%d", &max); // Read the first number
 
-    // Iterate over the full array
-    for (int i = 1; i < n-1; i++) {  
-        if (max < arr[i]) {
-            max = arr[i];
+    for (int i = 1; i < n; i++) {
+        scanf("%d", &num);
+        if (num > max) {
+            max = num;
         }
     }
 
-    printf("%d\n", max);  // Print the maximum element
+    printf("%d\n", max);
     return 0;
 }
