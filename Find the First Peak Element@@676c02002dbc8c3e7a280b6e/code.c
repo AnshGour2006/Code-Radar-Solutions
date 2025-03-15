@@ -1,23 +1,14 @@
-#include <stdio.h>
-
-int main() {
-    int n, num, max = -1;
-    scanf("%d", &n);
-
-    if (n <= 0) { 
-        printf("-1\n"); // No elements to compare
-        return 0;
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    for(int i=0;i<n-1;i++){
+        scanf("%d",&arr[i]);
     }
-
-    scanf("%d", &max); // Read the first number
-
-    for (int i = 1; i < n; i++) {
-        scanf("%d", &num);
-        if (num > max) {
-            max = num;
+    int max=-1;
+    for(int i=0;i<n-1;i++){
+        if(max<arr[i]){
+            return max;
         }
     }
-
-    printf("%d\n", max);
-    return 0;
 }
