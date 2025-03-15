@@ -1,14 +1,30 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    scanf("%d",&n);
-    for(int i=0;i<n-1;i++){
-        scanf("%d",&arr[i]);
+    scanf("%d", &n);
+    
+    if (n <= 0) {
+        printf("-1\n"); // If no valid elements exist, return -1
+        return 0;
     }
-    int max=-1;
-    for(int i=0;i<n-1;i++){
-        if(max<arr[i]){
-            return max;
+
+    int arr[n]; // Declare an array of size n
+
+    // Take input
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int max = arr[0]; // Initialize max with the first element
+
+    // Iterate over all elements to find max
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
         }
     }
+
+    printf("%d\n", max); // Print the maximum number
+    return 0;
 }
