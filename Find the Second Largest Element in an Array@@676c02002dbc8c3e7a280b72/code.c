@@ -19,14 +19,15 @@ int secondLargest(int arr[], int n) {
 
 int main() {
     int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    int n = sizeof(arr) / sizeof(arr[0]);
+    scanf("%d", &n);
 
-    int result = secondLargest(arr, n);
+    int arr[n]; // Declare array of size n
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int result = secondLargest(arr, n); // Use the correct n
+
     if (result == -1)
         printf("No second largest element\n");
     else
