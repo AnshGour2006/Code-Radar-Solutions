@@ -18,7 +18,12 @@ int secondLargest(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {12, 35, 1, 10, 34, 1};
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
     int n = sizeof(arr) / sizeof(arr[0]);
 
     int result = secondLargest(arr, n);
