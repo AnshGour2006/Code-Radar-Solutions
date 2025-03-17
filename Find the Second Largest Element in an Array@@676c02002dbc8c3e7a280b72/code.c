@@ -30,7 +30,7 @@ int main() {
     int result = secondLargest(arr, n); // Use the correct n
 
     if (result == -1)
-        printf("No second largest element\n");
+        printf("-1\n");
     else
         printf("%d\n", result);
 
