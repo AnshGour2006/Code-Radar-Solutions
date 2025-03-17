@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <limits.h> // Include for INT_MIN
 
 int secondLargest(int arr[], int n) {
     if (n < 2) return -1; // If less than 2 elements, no second largest
 
-    int first = arr[0], second = -1;
+    int first = INT_MIN, second = INT_MIN; // Handle negative numbers properly
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         if (arr[i] > first) {
             second = first;
             first = arr[i];
@@ -14,7 +15,7 @@ int secondLargest(int arr[], int n) {
         }
     }
 
-    return second;
+    return (second == INT_MIN) ? -1 : second; // If no valid second largest, return -1
 }
 
 int main() {
@@ -29,7 +30,7 @@ int main() {
     int result = secondLargest(arr, n); // Use the correct n
 
     if (result == -1)
-        printf("-1\n");
+        printf("No second largest element\n");
     else
         printf("%d\n", result);
 
