@@ -18,7 +18,7 @@ for(int i=0;i<n;i++){
 }
 scanf("%d",&x);
 int index=target_index(arr,n,x);
-if(index!=-1){
+if(index!= -1){
     printf("%d",index);
 }
 else{
