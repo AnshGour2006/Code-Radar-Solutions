@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int even_odd(int arr[], int n, int *even_count, int *odd_count) {
+void even_odd(int arr[], int n, int *even_count, int *odd_count) {
     *even_count = 0;
     *odd_count = 0;
     for (int i = 0; i < n; i++) {
@@ -21,6 +21,5 @@ int main() {
     }
     int even_count = 0, odd_count = 0;
     even_odd(arr, n, &even_count, &odd_count);
-    printf("%d", even_count);
-    printf("%d", odd_count);
+    printf("%d %d\n", even_count, odd_count);
 }
