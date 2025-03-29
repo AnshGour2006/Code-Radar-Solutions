@@ -15,7 +15,7 @@ void second_largest(int arr[], int n) {
     
     
 }
-nt main() {
+int main() {
     int n;
     scanf("%d", &n);
     
