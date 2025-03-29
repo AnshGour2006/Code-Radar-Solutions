@@ -20,5 +20,11 @@ int main() {
     }
 
     int duplicate = duplicate_element(arr, n);
+    
+    if (duplicate != -1) {
+        printf("%d\n", duplicate);
+    } else {
+        printf("-1\n");
+    }
     return 0;
 }
