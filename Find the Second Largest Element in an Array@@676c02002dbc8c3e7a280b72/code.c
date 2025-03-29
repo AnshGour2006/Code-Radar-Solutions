@@ -1,38 +1,34 @@
 #include <stdio.h>
-#include <limits.h> // Include for INT_MIN
 
-int secondLargest(int arr[], int n) {
-    if (n < 2) return -1; // If less than 2 elements, no second largest
-
-    int first = INT_MIN, second = INT_MIN; // Handle negative numbers properly
-
+void second_largest(int arr[], int n) {
+    int largest = arr[0];
+    int second_largest = arr[0];
+    
     for (int i = 0; i < n; i++) {
-        if (arr[i] > first) {
-            second = first;
-            first = arr[i];
-        } else if (arr[i] > second && arr[i] != first) {
-            second = arr[i];
+        if (arr[i] > largest) {
+            second_largest = largest;
+            largest = arr[i];
+        } else if (arr[i] > second_largest && arr[i] != largest) {
+            second_largest = arr[i];
         }
     }
-
-    return (second == INT_MIN) ? -1 : second; // If no valid second largest, return -1
+    
+    
 }
-
-int main() {
+nt main() {
     int n;
     scanf("%d", &n);
-
-    int arr[n]; // Declare array of size n
+    
+    if (n < 2) {
+        return 1;
+    }
+    
+    int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    int result = secondLargest(arr, n); // Use the correct n
-
-    if (result == -1)
-        printf("-1\n");
-    else
-        printf("%d\n", result);
-
+    
+    second_largest(arr, n);
+    
     return 0;
 }
