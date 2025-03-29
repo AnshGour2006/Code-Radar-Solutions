@@ -1,5 +1,5 @@
 // Your code here...
-##include <stdio.h>
+#include <stdio.h>
 
 int target_index(int arr[], int n, int x) {
     for (int i = 0; i < n; i++) {
