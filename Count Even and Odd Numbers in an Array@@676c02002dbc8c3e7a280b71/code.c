@@ -21,6 +21,6 @@ int main() {
     }
     int even_count = 0, odd_count = 0;
     even_odd(arr, n, &even_count, &odd_count);
-    printf("%d\n", even_count);
-    printf("%d\n", odd_count);
+    printf("%d", even_count);
+    printf("%dn", odd_count);
 }
