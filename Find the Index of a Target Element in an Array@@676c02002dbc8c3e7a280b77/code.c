@@ -17,7 +17,7 @@ for (int i = 0; i < n; i++) {
  scanf("%d", &x);
 
 // // Call the function
-int index = LinearSearch(arr, n, x);
+int index = target_index(arr, n, x);
  if (index != -1) {
   printf("%d\n", index);
  } else {
