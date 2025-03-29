@@ -10,11 +10,15 @@ int duplicate_element(int arr[],int n){
         }
     }
 }
-int main(){
+int main() {
     int n;
-    int result;
-    scanf("%d",&n);
-   result= duplicate_element(arr,n);
-   printf("%d",result);
-return 0;
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int duplicate = duplicate_element(arr, n);
+    return 0;
 }
