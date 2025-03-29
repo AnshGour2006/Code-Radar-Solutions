@@ -13,6 +13,7 @@ int duplicate_element(int arr[],int n){
 int main(){
     int n;
     scanf("%d",&n);
-    duplicate_element(arr,n)
+   result= duplicate_element(arr,n);
+   printf("%d",result);
 return 0;
 }
