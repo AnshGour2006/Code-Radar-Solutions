@@ -24,4 +24,5 @@ if(index!= -1){
 else{
     printf("-1\n");
 }
+return 0;
 }
