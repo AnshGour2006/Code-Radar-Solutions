@@ -16,7 +16,7 @@ int arr[n];
 for(int i=0;i<n;i++){
     scanf("%d",&arr[i]);
 }
-scanf("%d",&x);\
+scanf("%d",&x);
 int index=target_index(arr,n,x);
 if(index!=-1){
     printf("%d",index);
