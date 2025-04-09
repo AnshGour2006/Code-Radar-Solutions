@@ -1,4 +1,4 @@
-void isprime(int n){
+int isprime(int n){
     if(n<=1){
         return 0;
     }
