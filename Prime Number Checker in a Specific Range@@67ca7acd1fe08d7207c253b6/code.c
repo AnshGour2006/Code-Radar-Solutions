@@ -1,18 +1,24 @@
-int isPrime(int num) {
-    if (num < 2) return 0; // 0 and 1 are not prime
-
-    for (int i = 2; i <= sqrt(num); i++) {
-        if (num % i == 0)
-            return 0; // Not prime if divisible
+void isprime(int n){
+    if(n<=1){
+        return 0;
     }
-    return 1; // Prime if no divisor found
-}
-
-// Function to print all prime numbers up to 'num'
-void printPrimesInRange(int num) {
-    for (int i = 2; i <= num; i++) {
-        if (isPrime(i)) {          // Use helper function to check
-            printf("%d ", i);      // Print if prime
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            return 0;
         }
+ }
+            return 1;
+}
+void printPrimesInRange(int a,int b){
+    int found=0;
+    for(int i=a;i<=b;i++){
+        if(isprime(i)){
+            found=1;
+            printf("%d ",i);
+        }
+
+    }
+    if(!found){
+        printf("No prime numbers");
     }
 }
